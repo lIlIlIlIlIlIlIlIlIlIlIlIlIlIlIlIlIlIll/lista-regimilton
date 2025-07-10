@@ -1,1 +1,16 @@
+def verificar_temperatura():
 
+    try:
+        temperatura = float(input("Digite a temperatura atual (em Celsius): "))
+    except ValueError:
+        print("Entrada inválida. Por favor, digite um número.")
+        return
+
+    if temperatura > 25:
+        print("Alerta: Temperatura alta!")
+    elif temperatura < 10:
+        print("Alerta: Temperatura baixa!")
+    else:
+        print("Temperatura normal.")
+
+verificar_temperatura()
