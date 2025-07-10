@@ -1,0 +1,19 @@
+def verificar_divisibilidade(numero, divisor):
+
+  if divisor == 0:
+    return False 
+  return numero % divisor == 0
+
+numero = 10
+divisor = 2
+if verificar_divisibilidade(numero, divisor):
+  print(f"{numero} é divisível por {divisor}")
+else:
+  print(f"{numero} não é divisível por {divisor}")
+
+numero = 7
+divisor = 3
+if verificar_divisibilidade(numero, divisor):
+  print(f"{numero} é divisível por {divisor}")
+else:
+  print(f"{numero} não é divisível por {divisor}")
