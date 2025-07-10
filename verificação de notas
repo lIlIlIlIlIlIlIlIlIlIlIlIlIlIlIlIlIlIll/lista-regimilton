@@ -1,0 +1,13 @@
+def verificar_media(notas):
+
+  if not notas:
+    return False
+
+  media = sum(notas) / len(notas)
+  return media >= 7
+
+notas_aluno = [8.0, 7.5, 6.0, 9.0, 7.0]
+if verificar_media(notas_aluno):
+  print("Aprovado!")
+else:
+  print("Reprovado.")
